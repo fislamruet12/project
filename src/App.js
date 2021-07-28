@@ -22,19 +22,19 @@ const ChoseItem = () => {
     alert(id)
     //setref(!ref)
   }
-  console.log(applist)
+  //console.log(applist)
   return (
     applist.length === 0 ? null :
       <div className="row" >
         {
           Object.keys(applist).map(ind => (
-            <div key={ind} className="column" onClick={() => sel(ind)}>
+            <div key={ind} className="column brd" onClick={() => sel(ind)}>
               <div className="up">
                 {
-                  applist[ind].select === false ? <h1></h1> :
+                  applist[ind].select === false ? <i className="vis"></i> :
                     <i
                       onClick={() => deselct(ind)}
-                      className="fa fa-plane"></i>
+                      className="fa fa-check"></i>
 
                 }
               </div>
@@ -57,6 +57,27 @@ const ChoseItem = () => {
 function App() {
   return (
     <>
+      <nav>
+        <div class="container">
+          <div className="logo">
+            <img src="https://jobxprss-media-sg.s3.amazonaws.com/images/company_logo_077597.png" alt="logo" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Companies</a></li>
+              <li className="active"><a href="#">Services</a></li>
+              <li><a href="#">Client</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+
+        </div>
+      </nav>
+
       <section id="app">
         <div className="container">
           <div>

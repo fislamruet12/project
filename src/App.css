@@ -1,6 +1,57 @@
 
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul,ol {
+  list-style-type: none;
+}
+.clr {
+  clear: both;
+}
+nav {
+  background-color:#f7f6ff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 5px#eaeaed;;
+
+}
+
+.logo {
+  width: 30vw;
+  float: left;
+  height: 30px;
+}
+.logo img{
+  padding-top: 34px;
+  width: 30px;
+
+}
+.menu {
+  width:60vw;
+  float: left;
+  text-align: right;
+}
+.menu ul li {
+  display: inline-block;
+  padding-left: 44px;
+}
+.menu ul li a {
+  line-height: 90px;
+  font-size: 12px;
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.menu ul li.active a {
+ 
+  color: #69da81;
+ 
 }
 .container {
   width: 90vw;
@@ -15,6 +66,7 @@
   font-weight: bold;
   color: black;
   text-align: center;
+  color: #503a87;
  }
  .hb{
    font-size: 10px;
@@ -32,15 +84,21 @@
   width: 20vw;
   background-color: aliceblue;
   margin: 10px;
-  height: 150px;
-
-  
+  height: 150px; 
+}
+.brd{
+  border: 3px solid #69da81;
+}
+.vis{
+  visibility: hidden;
 }
 .up{
   text-align: right;
 }
 .up i{
- border: 1px solid gray;
+ border: 3px solid #69da81;
+ color:#69da81
+
 }
 .down{
   display: flex;
@@ -49,7 +107,7 @@
   flex-direction: column;
 }
 .down .box{
-   background-color:darkgray;
+   background-color:#462f7f;
    height: 50px;
    width: 50px;
    border-radius: 50%;
@@ -57,7 +115,9 @@
    justify-content: center;
    align-items: center;
 }
-
+.box i{
+  color: white;
+}
 .down .title{
   text-align: center;
   font-size: 14px;
@@ -69,4 +129,10 @@
 .btn{
   margin-top: 10px;
   margin-left: 32px;
+  border: none;
+  background-color:#69e689;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
 }
