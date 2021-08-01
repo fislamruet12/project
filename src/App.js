@@ -28,7 +28,7 @@ const ChoseItem = () => {
       <div className="row" >
         {
           Object.keys(applist).map(ind => (
-            <div key={ind} className="column brd" onClick={() => sel(ind)}>
+            <div key={ind} className={applist[ind].select === false ? "column" : "column brd"} onClick={() => sel(ind)}>
               <div className="up">
                 {
                   applist[ind].select === false ? <i className="vis"></i> :
