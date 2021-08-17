@@ -13,7 +13,7 @@ function Project() {
       </div>
     </div>
   ) : (
-    <div>
+    <div id="app">
       <div className="container">
         <div>
           <h1 className="hd">You have selected these Stack to Develop?</h1>
